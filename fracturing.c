@@ -33,6 +33,7 @@ I used https://www.w3schools.com/c/c_booleans.php while learning about the boole
 // The code above was completed before the wording change in the new Assignment 1 PDF.
 // All mentions of printDistance() are void due to changes made.
 
+// Prompts the user for points and then calculates the distance based off of that point.
 double getDistance() {
     int x1 = 0;
     int y1 = 0;
@@ -52,15 +53,18 @@ double getDistance() {
     double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
 }
 
+//Gets the distance and then prints out the distance.
 double calculateDistance() {
 
     // printDistance(distance);
     double distance = getDistance();
-
+    printf("The distance between the two points is %d", distance);
     return distance;
 
 }
 
+
+//Calculates the perimeter of a circle with the user's given points and calculated distance.
 double calculatePerimeter()
 {
     // double distance = calculateDistance();
@@ -73,6 +77,7 @@ double calculatePerimeter()
     return 3;
 }
 
+//Calculates the area of a circle using the calculated distance.
 double calculateArea()
 {
     // double distance = calculateDistance();
@@ -87,6 +92,7 @@ double calculateArea()
     return 1;
 }
 
+//Gets the width of the circle, which is equal to the diameter.
 double calculateWidth()
 {
     // double width = calculateDistance();
@@ -97,6 +103,7 @@ double calculateWidth()
     return 1;
 }
 
+//Gets the height of the circle, which is equal to the diameter.
 double calculateHeight()
 {
     // double height = calculateDistance();
@@ -108,6 +115,7 @@ double calculateHeight()
     return 1;
 }
 
+//Calls all of the functions.
 int main(int argc, char **argv)
 {
     calculateDistance();
