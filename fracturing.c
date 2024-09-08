@@ -10,7 +10,7 @@ Furthermore, I'm using booleans and the stdbool.h library, which I learned about
 I used https://www.w3schools.com/c/c_booleans.php while learning about the boolean variable.
 */
 
-void print_distance(double distance) {
+void printDistance(double distance) {
     static bool shouldPrint = true;
 
     if(shouldPrint) {
@@ -19,7 +19,7 @@ void print_distance(double distance) {
     }
 }
 
-double calculate_distance() {
+double calculateDistance() {
     int x1 = 0;
     int y1 = 0;
 
@@ -37,15 +37,15 @@ double calculate_distance() {
 
     double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
 
-    print_distance(distance);
+    printDistance(distance);
 
     return distance;
 
 }
 
-double calculate_perimeter()
+double calculatePerimeter()
 {
-    double distance = calculate_distance();
+    double distance = calculateDistance();
     double radius = distance / 2;
     double perimeter = 2 * PI * radius;
 
@@ -54,9 +54,9 @@ double calculate_perimeter()
     return 3;
 }
 
-double calculate_area()
+double calculateArea()
 {
-    double distance = calculate_distance();
+    double distance = calculateDistance();
     double radius = distance / 2;
 
     double area = PI * pow(radius, 2);
@@ -66,18 +66,18 @@ double calculate_area()
     return 1;
 }
 
-double calculate_width()
+double calculateWidth()
 {
-    double width = calculate_distance();
+    double width = calculateDistance();
 
     printf("The width of the city encompassed by your request is %f\n", width);
 
     return 1;
 }
 
-double calculate_height()
+double calculateHeight()
 {
-    double height = calculate_distance();
+    double height = calculateDistance();
 
     printf("The height of the city encompassed by your request is %f\n", height);
 
@@ -86,11 +86,11 @@ double calculate_height()
 
 int main(int argc, char **argv)
 {
-    calculate_distance();
-    calculate_perimeter();
-    calculate_area();
-    calculate_width();
-    calculate_height();
+    calculateDistance();
+    calculatePerimeter();
+    calculateArea();
+    calculateWidth();
+    calculateHeight();
 
     return 1;
 }
