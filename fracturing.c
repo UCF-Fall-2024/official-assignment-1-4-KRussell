@@ -21,16 +21,19 @@ Furthermore, I'm using booleans and the stdbool.h library, which I learned about
 I used https://www.w3schools.com/c/c_booleans.php while learning about the boolean variable.
 */
 
-void printDistance(double distance) {
-    static bool shouldPrint = true;
+// void printDistance(double distance) {
+//     static bool shouldPrint = true;
+//
+//     if(shouldPrint) {
+//         printf("The distance between the two points is %f\n", distance);
+//         shouldPrint = false;
+//     }
+// }
 
-    if(shouldPrint) {
-        printf("The distance between the two points is %f\n", distance);
-        shouldPrint = false;
-    }
-}
+// The code above was completed before the wording change in the new Assignment 1 PDF.
+// All mentions of 
 
-double calculateDistance() {
+double getDistance() {
     int x1 = 0;
     int y1 = 0;
 
@@ -47,8 +50,12 @@ double calculateDistance() {
     printf("Point #2 Entered: x2 = %d; y2 = %d\n", x2, y2);
 
     double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+}
 
-    printDistance(distance);
+double calculateDistance() {
+
+    // printDistance(distance);
+    double distance = getDistance();
 
     return distance;
 
@@ -56,7 +63,8 @@ double calculateDistance() {
 
 double calculatePerimeter()
 {
-    double distance = calculateDistance();
+    // double distance = calculateDistance();
+    double distance = getDistance();
     double radius = distance / 2;
     double perimeter = 2 * PI * radius;
 
@@ -67,7 +75,9 @@ double calculatePerimeter()
 
 double calculateArea()
 {
-    double distance = calculateDistance();
+    // double distance = calculateDistance();
+    double distance = getDistance();
+
     double radius = distance / 2;
 
     double area = PI * pow(radius, 2);
@@ -79,7 +89,8 @@ double calculateArea()
 
 double calculateWidth()
 {
-    double width = calculateDistance();
+    // double width = calculateDistance();
+    double width = getDistance();
 
     printf("The width of the city encompassed by your request is %f\n", width);
 
@@ -88,7 +99,9 @@ double calculateWidth()
 
 double calculateHeight()
 {
-    double height = calculateDistance();
+    // double height = calculateDistance();
+
+    double height = getDistance();
 
     printf("The height of the city encompassed by your request is %f\n", height);
 
