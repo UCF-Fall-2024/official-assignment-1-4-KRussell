@@ -31,7 +31,7 @@ I used https://www.w3schools.com/c/c_booleans.php while learning about the boole
 // }
 
 // The code above was completed before the wording change in the new Assignment 1 PDF.
-// All mentions of 
+// All mentions of printDistance() are void due to changes made.
 
 double getDistance() {
     int x1 = 0;
