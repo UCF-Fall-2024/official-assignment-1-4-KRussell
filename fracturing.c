@@ -58,7 +58,7 @@ double calculateDistance() {
 
     // printDistance(distance);
     double distance = getDistance();
-    printf("The distance between the two points is %d", distance);
+    printf("The distance between the two points is %f", distance);
     return distance;
 
 }
