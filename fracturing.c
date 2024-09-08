@@ -1,3 +1,14 @@
+//********************************************************
+// fracturing.c
+// Author: Kyle Russell
+// Date: 9/8/24
+// Class: COP 3223, Professor Parra
+// Purpose: This program asks the user for points, and then calculates various functions using those inputs.
+// Input: x1 point, y1 point, x2 point, y2 point.
+//
+// Output: The inputted points; the used function (distance, perimeter, etc.)
+// //********************************************************
+
 #include <stdio.h>
 #include <math.h>
 #include <stdbool.h>
